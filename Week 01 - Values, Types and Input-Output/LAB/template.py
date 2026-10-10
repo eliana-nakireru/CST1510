@@ -13,29 +13,34 @@ Delete these instructions as you replace them with your code.
 """
 
 print("=" * 30)
-print("RECORD CHECK - srv-01")
+label=(input("please write a label"))
+print(f" RECORD CHECK - {label}")
 print("=" * 30)
 first = float(input("please write first value:"))
 second= float(input("please write second value:"))
 third = float(input ("please write third value:"))
 print("=" * 30)
-print(first)
-print(second)
-print(third)
-print("=" * 30)
+print("used :" , first)
+print("total:" , second)
+print("change" , third)
 
 
 
-# ================================================================== PROCESS
-# 2. Work out what you were NOT given.       [Typical and above]
-#
-#    - difference : how far the first is from the second
-#    - percent    : the first as a percentage of the second
-#
-#    Do not type the answers. Calculate them.
+print()
+print("=" * 34)
+label=(input("please write a label"))
+print(f" RECORD CHECK - {label}")
+print("=" * 34)
+first = float(input("please write first value:"))
+second= float (input("please write second value:"))   
+free = (second - first)
+percent = (first/second) * 100
+print("=" * 34)
+print(f"used :  {first:>10.2f}")
+print(f"total:  {second:>10.2f}")
+print(f"free : {free:>10.2f}")
+print(f"percent:{percent:>10.2f}" , "%")
 
-difference = 0.0   # 
-percent = 0.0      # 
 
 
 # =================================================================== OUTPUT
@@ -50,10 +55,22 @@ percent = 0.0      #
 
 print()
 print("=" * 34)
+label=(input("please write a label"))
 print(f"  RECORD CHECK  -  {label}")
 print("=" * 34)
+first = float(input("please write first value:"))
+second= float (input("please write second value:"))   
+difference = (second - first)
+plus = (first + second)
+percent = (first/second) * 100
+print("=" * 34)
+print(f"used :  {first:>10.2f}")
+print(f"total:  {second:>10.2f}")
+print(f"free : {difference:>+10.2f}")
+print(f"Mine:  {plus:>10.2f}") #This helps clearly add the two values
+print(f"percent:{percent:>10.2f}" , "%")
 
-# : your report lines go here
+# : This helps clearly add the two values
 
 print("=" * 34)
 
